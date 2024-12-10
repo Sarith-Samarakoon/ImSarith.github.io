@@ -433,6 +433,7 @@ header nav a.active {
   }
 }
 
+/* Footer Styles */
 footer {
   background-color: var(--primary-color);
   color: white;
@@ -442,4 +443,19 @@ footer {
 
 footer p {
   margin: 5px 0;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a {
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+  color: #ff6c63;
 }
