@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Sarith Samarakoon</title>
+    <link rel="stylesheet" href="./CSS/projects.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <script defer src="./JS/projects.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">Sarith Samarakoon</h1>
+        <nav>
+          <a href="Index.html">Home</a>
+          <a href="Projects.html" class="active">Projects</a>
+          <a href="Resume.html">Resume</a>
+          <a href="Contact.html">Contact</a>
+        </nav>
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" id="hamburger-icon">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <div class="container_new">
+      <section id="projects">
+        <div class="projects-header">
+          <h2><span class="highlight">My</span> Projects</h2>
+          <p class="section-description">
+            Explore some of the
+            <span class="highlight">amazing projects</span> I've worked on.
+            Click on each card to learn more about how I blend creativity with
+            technology.
+          </p>
+        </div>
+
+        <!-- Filter Tabs Section -->
+        <div class="filter-tabs">
+          <h2>Filter Projects</h2>
+          <div class="tabs">
+            <button class="tab active" data-filter="all">All</button>
+            <button class="tab" data-filter="solo">Solo Projects</button>
+            <button class="tab" data-filter="group">Group Projects</button>
+            <button class="tab" data-filter="html">HTML</button>
+            <button class="tab" data-filter="java">Java</button>
+            <button class="tab" data-filter="mern">MERN</button>
+            <button class="tab" data-filter="kotlin">Kotlin</button>
+            <button class="tab" data-filter="figma">Figma</button>
+          </div>
+        </div>
+
+        <div class="project-cards">
+          <div class="project-card scroll-image-card" data-filter="group html">
+            <div class="image-wrapper">
+              <img
+                src="./Images/BidZone_home.png"
+                alt="BidZone Project"
+                class="project-image-scroll"
+              />
+            </div>
+            <div class="card-content">
+              <h3 class="project-title">BidZone</h3>
+              <p class="project-description">
+                An innovative online bidding platform that connects buyers and
+                sellers, offering seamless and secure transactions.
+              </p>
+              <div class="project-details">
+                <span class="detail-label"
+                  ><strong>Languages Used:</strong> HTML, CSS, JavaScript</span
+                >
+                <span class="detail-label"
+                  ><strong>Project Type:</strong> Group Project</span
+                >
+              </div>
+              <div class="project-icons">
+                <i class="fas fa-gavel" title="Bidding System"></i>
+                <i class="fas fa-shield-alt" title="Secure Transactions"></i>
+                <i class="fas fa-users" title="Community Platform"></i>
+              </div>
+              <a href="#" class="btn">Explore BidZone</a>
+            </div>
+          </div>
+
+          <div class="project-card" data-filter="group java">
+            <img
+              src="https://i.pinimg.com/236x/9f/84/83/9f84837d409c9ee9d9f9ee8d6ecfeda3.jpg"
+              alt="Event Management System"
+              class="project-image"
+            />
+            <div class="card-content">
+              <h3 class="project-title">Event Management System</h3>
+              <p class="project-description">
+                A robust Java-based project designed to streamline event
+                planning, coordination, and management for both organizers and
+                attendees.
+              </p>
+              <div class="project-details">
+                <span class="detail-label"
+                  ><strong>Languages Used:</strong> Java</span
+                >
+                <span class="detail-label"
+                  ><strong>Project Type:</strong> Group Project</span
+                >
+              </div>
+              <div class="project-icons">
+                <i class="fas fa-calendar-check" title="Event Scheduling"></i>
+                <i class="fas fa-users" title="Attendee Management"></i>
+                <i class="fas fa-tasks" title="Task Coordination"></i>
+              </div>
+              <a href="#" class="btn">Discover More</a>
+            </div>
+          </div>
+
+          <div class="project-card scroll-image-card" data-filter="group mern">
+            <div class="image-wrapper">
+              <img
+                src="./Images/Home Page.png"
+                alt="Candy Cloud Project"
+                class="project-image-scroll"
+              />
+            </div>
+            <div class="card-content">
+              <h3 class="project-title">Candy Cloud</h3>
+              <p class="project-description">
+                A delicious MERN stack project offering an online sweet delivery
+                system, bringing your favorite treats right to your doorstep
+                with ease and efficiency.
+              </p>
+              <div class="project-details">
+                <span class="detail-label"
+                  ><strong>Languages Used:</strong> JavaScript (MERN)</span
+                >
+                <span class="detail-label"
+                  ><strong>Project Type:</strong> Group Project</span
+                >
+              </div>
+              <div class="project-icons">
+                <i class="fas fa-candy-cane" title="Sweet Treats"></i>
+                <i class="fas fa-shopping-cart" title="Online Ordering"></i>
+                <i class="fas fa-truck" title="Fast Delivery"></i>
+              </div>
+              <a href="#" class="btn">Order from Candy Cloud</a>
+            </div>
+          </div>
+
+          <div class="project-card" data-filter="solo mern">
+            <img
+              src="./Images/Backend_image.png"
+              alt="Golden Horizon Backend"
+              class="project-image"
+            />
+            <div class="card-content">
+              <h3 class="project-title">Golden Horizon - Backend</h3>
+              <p class="project-description">
+                The backend for Golden Horizon, developed using Node.js,
+                Express, and MongoDB, ensures secure and efficient hotel
+                management operations, including bookings, user management, and
+                data storage.
+              </p>
+              <div class="project-details">
+                <span class="detail-label"
+                  ><strong>Languages Used:</strong> Node.js, Express,
+                  MongoDB</span
+                >
+                <span class="detail-label"
+                  ><strong>Project Type:</strong> Solo Project</span
+                >
+              </div>
+              <div class="project-icons">
+                <i class="fas fa-database" title="Database Management"></i>
+                <i class="fas fa-lock" title="Security"></i>
+                <i class="fas fa-server" title="Server Operations"></i>
+              </div>
+              <a href="#" class="btn">Explore Backend</a>
+            </div>
+          </div>
+
+          <div class="project-card scroll-image-card" data-filter="solo mern">
+            <div class="image-wrapper">
+              <img
+                src="./Images/hotel-management-frontend-90m60787v-sarith-samarakoons-projects.vercel.app_.png"
+                alt="Golden Horizon Frontend"
+                class="project-image-scroll"
+              />
+            </div>
+            <div class="card-content">
+              <h3 class="project-title">Golden Horizon - Frontend</h3>
+              <p class="project-description">
+                The frontend for Golden Horizon, built using React, provides a
+                seamless user interface for managing hotel services, exploring
+                room options, and completing bookings.
+              </p>
+              <div class="project-details">
+                <span class="detail-label"
+                  ><strong>Languages Used:</strong> React</span
+                >
+                <span class="detail-label"
+                  ><strong>Project Type:</strong> Solo Project</span
+                >
+              </div>
+              <div class="project-icons">
+                <i class="fas fa-laptop" title="Responsive Design"></i>
+                <i class="fas fa-mouse-pointer" title="User Interaction"></i>
+                <i class="fas fa-palette" title="Modern UI"></i>
+              </div>
+              <a href="#" class="btn">Explore Frontend</a>
+            </div>
+          </div>
+
+          <div class="project-card scroll-image-card" data-filter="solo kotlin">
+            <div class="image-wrapper">
+              <img
+                src="./Images/TaskTracker.png"
+                alt="TaskTracker App"
+                class="project-image-scroll"
+              />
+            </div>
+            <div class="card-content">
+              <h3 class="project-title">TaskTracker</h3>
+              <p class="project-description">
+                TaskTracker is an Android application developed in Kotlin,
+                designed to efficiently manage tasks with full CRUD (Create,
+                Read, Update, Delete) functionality. Stay organized and boost
+                productivity with its intuitive user interface and reliable
+                performance.
+              </p>
+              <div class="project-details">
+                <span class="detail-label"
+                  ><strong>Languages Used:</strong> Kotlin</span
+                >
+                <span class="detail-label"
+                  ><strong>Project Type:</strong> Solo Project</span
+                >
+              </div>
+              <div class="project-icons">
+                <i class="fas fa-tasks" title="Task Management"></i>
+                <i class="fas fa-edit" title="Edit Tasks"></i>
+                <i class="fas fa-trash-alt" title="Delete Tasks"></i>
+              </div>
+              <a href="#" class="btn">Discover TaskTracker</a>
+            </div>
+          </div>
+
+          <div class="project-card scroll-image-card" data-filter="solo html">
+            <div class="image-wrapper">
+              <img
+                src="./Images/Portfolio_home.png"
+                alt="Portfolio Website"
+                class="project-image-scroll"
+              />
+            </div>
+            <div class="card-content">
+              <h3 class="project-title">Portfolio Website</h3>
+              <p class="project-description">
+                A personal portfolio website built using HTML, CSS, and
+                JavaScript to showcase my skills, projects, and achievements.
+                Designed for a seamless and professional user experience.
+              </p>
+              <div class="project-details">
+                <span class="detail-label"
+                  ><strong>Languages Used:</strong> HTML, CSS, JavaScript</span
+                >
+                <span class="detail-label"
+                  ><strong>Project Type:</strong> Solo Project</span
+                >
+              </div>
+              <div class="project-icons">
+                <i class="fas fa-user" title="About Me"></i>
+                <i class="fas fa-code" title="Development Skills"></i>
+                <i class="fas fa-briefcase" title="Projects"></i>
+              </div>
+              <a href="#" class="btn">Visit Portfolio</a>
+            </div>
+          </div>
+
+          <div class="project-card scroll-image-card" data-filter="solo html">
+            <div class="image-wrapper">
+              <img
+                src="./Images/VFX_Home.png"
+                alt="VFX SQUAD Portfolio"
+                class="project-image-scroll"
+              />
+            </div>
+            <div class="card-content">
+              <h3 class="project-title">VFX SQUAD Portfolio</h3>
+              <p class="project-description">
+                A visually stunning and dynamic portfolio website crafted for
+                VFX SQUAD using HTML, CSS, and JavaScript. This website
+                showcases the client's exceptional visual effects projects with
+                an engaging user interface and interactive features.
+              </p>
+              <div class="project-details">
+                <span class="detail-label"
+                  ><strong>Languages Used:</strong> HTML, CSS, JavaScript</span
+                >
+                <span class="detail-label"
+                  ><strong>Project Type:</strong> Solo Project</span
+                >
+              </div>
+              <div class="project-icons">
+                <i class="fas fa-camera" title="Visual Effects"></i>
+                <i class="fas fa-palette" title="Creative Design"></i>
+                <i class="fas fa-laptop-code" title="Web Development"></i>
+              </div>
+              <a href="#" class="btn">Explore the Website</a>
+            </div>
+          </div>
+
+          <div class="project-card" data-filter="group figma">
+            <img
+              src="./Images/Candy-Cloud-Figma.png"
+              alt="Candy Cloud Figma Design"
+              class="project-image"
+            />
+            <div class="card-content">
+              <h3 class="project-title">Candy Cloud Website Design</h3>
+              <p class="project-description">
+                A visually appealing and user-centric Figma design for the Candy
+                Cloud website. This design focuses on showcasing products,
+                enhancing user engagement, and providing an intuitive navigation
+                experience.
+              </p>
+              <div class="project-details">
+                <span class="detail-label"
+                  ><strong>Design Used:</strong> Figma</span
+                >
+                <span class="detail-label"
+                  ><strong>Project Type:</strong> Group Project</span
+                >
+              </div>
+              <div class="project-icons">
+                <i class="fas fa-paint-brush" title="Creative Design"></i>
+                <i class="fas fa-desktop" title="User Interface"></i>
+                <i class="fas fa-mobile-alt" title="Responsive Design"></i>
+              </div>
+              <a href="#" class="btn">View Design</a>
+            </div>
+          </div>
+
+          <div class="project-card" data-filter="group figma">
+            <img
+              src="./Images/Mlesna_Tea.png"
+              alt="Mlesna Tea Website Design"
+              class="project-image"
+            />
+            <div class="card-content">
+              <h3 class="project-title">Mlesna Tea Website Redesign</h3>
+              <p class="project-description">
+                A comprehensive Figma redesign of the Mlesna Tea website focused
+                on enhancing usability, modernizing aesthetics, and improving
+                user engagement. The design incorporates intuitive navigation
+                and a refined visual hierarchy to showcase the elegance of
+                Mlesna's brand.
+              </p>
+              <div class="project-details">
+                <span class="detail-label"
+                  ><strong>Design Used:</strong> Figma</span
+                >
+                <span class="detail-label"
+                  ><strong>Project Type:</strong> Group Project</span
+                >
+              </div>
+              <div class="project-icons">
+                <i class="fas fa-leaf" title="Elegant Design"></i>
+                <i class="fas fa-mouse-pointer" title="Improved Usability"></i>
+                <i class="fas fa-laptop" title="Responsive Design"></i>
+              </div>
+              <a href="#" class="btn">View Design</a>
+            </div>
+          </div>
+
+          <div class="project-card" data-filter="solo figma">
+            <img
+              src="./Images/FitMate.png"
+              alt="Fitmates Mobile App Design"
+              class="project-image"
+            />
+            <div class="card-content">
+              <h3 class="project-title">Fitmates Mobile App Design</h3>
+              <p class="project-description">
+                A modern and intuitive Figma design for Fitmates, a fitness app
+                that promotes healthy living and connects fitness enthusiasts.
+                The app features user-friendly interfaces for tracking workouts,
+                setting goals, and engaging with a fitness community.
+              </p>
+              <div class="project-details">
+                <span class="detail-label"
+                  ><strong>Design Used:</strong> Figma</span
+                >
+                <span class="detail-label"
+                  ><strong>Project Type:</strong> Solo Project</span
+                >
+              </div>
+              <div class="project-icons">
+                <i class="fas fa-dumbbell" title="Fitness Tracking"></i>
+                <i class="fas fa-heart" title="Health & Wellness"></i>
+                <i class="fas fa-users" title="Community Engagement"></i>
+              </div>
+              <a href="#" class="btn">View Design</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>© Sarith Samarakoon | All Rights Reserved</p>
+        <p>Email: samarakoonsarith@gmail.com</p>
+        <div class="social-icons">
+          <a href="https://twitter.com" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://linkedin.com" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
