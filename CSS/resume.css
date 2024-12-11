@@ -80,16 +80,85 @@ header nav a.active {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Styles */
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Media query for smaller screens */
 @media (max-width: 768px) {
-  header .container {
+  /* Initially hide the navigation menu */
+  header nav {
+    display: none;
     flex-direction: column;
-    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Darker shadow for a more professional look */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for a sleek look */
+    z-index: 1000;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth animation for appearance */
   }
 
-  header nav {
-    flex-direction: column;
-    gap: 10px;
+  header nav.navbar-active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0); /* Animation to slide in the menu smoothly */
+  }
+
+  /* Style for nav links */
+  header nav a {
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  header nav a:hover {
+    background-color: #f0f0f0; /* Light gray hover background */
+    transform: translateX(10px); /* Slight slide effect for hover */
+  }
+
+  /* Active Link Styling */
+  header nav a.active {
+    background-color: #6c63ff; /* Primary color background */
+    color: #ffffff; /* White text on active link */
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow on active link */
+  }
+
+  header nav a:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 2px #ff6c63; /* Custom focus outline in secondary color */
+  }
+
+  /* Show hamburger icon */
+  .hamburger {
+    display: block;
+    margin-left: 3px;
+  }
+
+  /* Active state for nav menu */
+  .navbar-active {
+    display: flex;
+  }
+
+  /* Change hamburger icon color on hover */
+  .hamburger:hover {
+    color: #ff6c63; /* Secondary color */
   }
 }
 
@@ -281,6 +350,36 @@ header nav a.active {
 
 .info-item a:hover {
   color: #ff6c63;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr; /* Single column layout for tablets and smaller screens */
+  }
+
+  .info-item {
+    justify-content: start;
+    margin-bottom: 15px;
+  }
+
+  .info-icon {
+    font-size: 1.3rem; /* Adjust icon size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  h3 {
+    font-size: 1.4rem; /* Reduce font size on very small screens */
+  }
+
+  .info-icon {
+    font-size: 1.2rem; /* Further reduce icon size */
+  }
+
+  .info-item {
+    font-size: 0.9rem; /* Adjust font size for better readability */
+  }
 }
 
 /* Education Section */

@@ -1,3 +1,10 @@
+document
+  .getElementById("hamburger-icon")
+  .addEventListener("click", function () {
+    const nav = document.querySelector("nav");
+    nav.classList.toggle("navbar-active");
+  });
+
 // Get the button
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
@@ -17,3 +24,15 @@ scrollToTopBtn.onclick = function () {
     behavior: "smooth", // Smooth scroll
   });
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+  const skillBars = document.querySelectorAll(".skill-bar .progress");
+
+  skillBars.forEach((bar) => {
+    const width = bar.style.width;
+    bar.style.width = "0";
+    setTimeout(() => {
+      bar.style.width = width;
+    }, 500);
+  });
+});

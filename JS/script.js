@@ -1,3 +1,10 @@
+document
+  .getElementById("hamburger-icon")
+  .addEventListener("click", function () {
+    const nav = document.querySelector("nav");
+    nav.classList.toggle("navbar-active");
+  });
+
 document.addEventListener("DOMContentLoaded", () => {
   // Smooth scroll to the About section when the "Discover More" button is clicked
   const discoverMoreBtn = document.getElementById("discover-more");

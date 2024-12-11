@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[Your Name] - Portfolio</title>
+    <title>Sarith Samarakoon - Portfolio</title>
     <link rel="stylesheet" href="./CSS/index.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
     />
+    <script defer src="./JS/script.js"></script>
   </head>
   <body>
     <header>
@@ -20,6 +21,10 @@
           <a href="Resume.html">Resume</a>
           <a href="Contact.html">Contact</a>
         </nav>
+            <!-- Hamburger Menu Button -->
+    <button class="hamburger" id="hamburger-icon">
+      <i class="fas fa-bars"></i>
+    </button>
       </div>
     </header>
 
@@ -32,24 +37,24 @@
             <span>user-friendly</span> solutions for modern challenges as a
             <strong>Web Developer</strong>.
           </p>
-          <a href="#about" class="btn">Discover More</a>
+          <a href="#about" id="discover-more" class="btn">Discover More</a>
           <div class="social-icons">
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/sarith-samarakoon-a74739313/"
               target="_blank"
               aria-label="LinkedIn"
               ><i class="fab fa-linkedin"></i
             ></a>
-            <a href="https://github.com" target="_blank" aria-label="GitHub"
+            <a href="https://github.com/Sarith-Samarakoon" target="_blank" aria-label="GitHub"
               ><i class="fab fa-github"></i
             ></a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/sarithsamarakoon/"
               target="_blank"
               aria-label="Instagram"
               ><i class="fab fa-instagram"></i
             ></a>
-            <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+            <a href="https://www.facebook.com/profile.php?id=100069854993593" target="_blank" aria-label="Facebook"
               ><i class="fab fa-facebook"></i
             ></a>
           </div>
@@ -115,52 +120,59 @@
         <div class="project-grid">
           <!-- Project Card 1 -->
           <div class="project-card">
-            <img
-              src="https://i.pinimg.com/236x/d2/2a/0a/d22a0adb2a43afa025c97e9a24cb3979.jpg"
-              alt="Project 1"
-            />
+            <div class="image-wrapper">
+              <img
+                src="./Images/copy.png"
+                alt="Hotel Management Website"
+                class="project-image-scroll"
+              />
+            </div>
             <div class="project-content">
-              <h3><i class="fas fa-code"></i> E-Commerce Platform</h3>
+              <h3><i class="fas fa-hotel"></i> Hotel Management Platform</h3>
               <p>
-                A full-stack e-commerce website with seamless user experience,
-                featuring payment gateway integration and admin dashboard.
+                A full-stack hotel management system built with MERN stack,
+                offering features like room booking, service management, and a
+                user-friendly admin dashboard.
               </p>
-              <a href="#" class="btn-outline">Explore</a>
+              <a href="https://goldenhorizonhotel.vercel.app/" class="btn-outline">Explore</a>
             </div>
           </div>
           <!-- Project Card 2 -->
           <div class="project-card">
-            <img
-              src="https://i.pinimg.com/236x/69/9d/9f/699d9fd460453520bb26bd1d0aa457c6.jpg"
-              alt="Project 2"
-            />
+            <div class="image-wrapper">
+              <img
+                src="./Images/Home Page_copy.png"
+                alt="Online Sweet Management System"
+                class="project-image-scroll"
+              />
+            </div>
             <div class="project-content">
-              <h3><i class="fas fa-laptop-code"></i> Portfolio Website</h3>
+              <h3><i class="fas fa-shopping-cart"></i> E-Commerce Platform</h3>
               <p>
-                A sleek, modern portfolio showcasing responsive design,
-                animations, and professional layouts.
+                A feature-rich e-commerce platform developed with the MERN
+                stack, specializing in sweet management, offering product
+                catalog browsing, secure payments, and order tracking.
               </p>
-              <a href="#" class="btn-outline">Explore</a>
+              <a href="https://github.com/Sarith-Samarakoon/CandyCloud.git" class="btn-outline">Explore</a>
             </div>
           </div>
+
           <!-- Project Card 3 -->
           <div class="project-card">
-            <img
-              src="https://i.pinimg.com/236x/4a/d2/c8/4ad2c836bfa01a1724ba0289ea0eff57.jpg"
-              alt="Project 3"
-            />
+            <div class="image-wrapper">
+              <img src="./Images/FitMate.png" alt="FitMates App Design" class="project-image-scroll" />
+            </div>
             <div class="project-content">
-              <h3><i class="fas fa-database"></i> Inventory Management</h3>
+              <h3><i class="fas fa-mobile-alt"></i> FitMates App Design</h3>
               <p>
-                A robust application to manage inventory, generate real-time
-                reports, and optimize stock handling.
+                FitMates is a cutting-edge Figma design concept for a fitness tracking app tailored to enhance user engagement and simplify health management. The design is user-friendly interface that allows users to track workouts.
               </p>
-              <a href="#" class="btn-outline">Explore</a>
+              
+              <a href="https://www.figma.com/design/oUUy5JhtkHB2sRzvuMa6lU/Untitled?node-id=0-1&m=dev&t=mXX7Uo1NKgIrCmas-1" class="btn-outline">Explore</a>
             </div>
           </div>
-        </div>
-        <a href="projects.html" class="btn">View All Projects</a>
       </div>
+      <a href="projects.html" class="btn">View All Projects</a>
     </section>
 
     <footer>
