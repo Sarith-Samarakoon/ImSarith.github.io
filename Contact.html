@@ -9,7 +9,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
+    <!-- Include SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.min.js"></script>
     <script defer src="./JS/contact.js"></script>
   </head>
   <body>
@@ -43,7 +48,12 @@
         <div class="contact-content">
           <!-- Contact Form Section -->
           <div class="contact-form-container">
-            <form id="contact-form" class="contact-form">
+            <form
+              id="contact-form"
+              class="contact-form"
+              action="https://formspree.io/f/xeoqwnrl"
+              method="POST"
+            >
               <h2>Get in Touch</h2>
 
               <div class="form-group">
@@ -53,6 +63,7 @@
                   id="name"
                   placeholder="Enter your name"
                   required
+                  name="name"
                 />
                 <span class="error-message" id="nameError"></span>
               </div>
@@ -64,6 +75,7 @@
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   placeholder="Enter your email"
                   required
                 />
@@ -77,6 +89,7 @@
                 <textarea
                   id="message"
                   rows="5"
+                  name="message"
                   placeholder="Enter your message"
                   required
                 ></textarea>

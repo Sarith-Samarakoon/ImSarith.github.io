@@ -1,11 +1,3 @@
-document
-  .getElementById("hamburger-icon")
-  .addEventListener("click", function () {
-    const nav = document.querySelector("nav");
-    nav.classList.toggle("navbar-active");
-  });
-
-// Wait for the DOM to load
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contact-form");
 
@@ -39,9 +31,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (isValid) {
-      // Simulate form submission (you can replace this with actual AJAX call)
-      alert(`Thank you, ${name}! Your message has been sent.`);
-      form.reset(); // Clear the form
+      // Disable the button to prevent multiple submissions
+      document.querySelector(".btn-submit").disabled = true;
+
+      // Show success alert using SweetAlert2
+      Swal.fire({
+        icon: "success",
+        title: "Message Sent!",
+        text: `Thank you, ${name}! Your message has been sent successfully.`,
+        confirmButtonText: "OK",
+      });
+
+      // If you want to submit the form to Formspree, you can do so after the alert
+      form.submit(); // Submit the form to Formspree
+
+      // Optionally, you can reset the form here:
+      form.reset();
     }
   });
 
